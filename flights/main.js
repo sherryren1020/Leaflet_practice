@@ -37,8 +37,11 @@
                 },
                 "properties": {
                     "country":state[2],
-                    "true_track": state[10]
+                    "true_track": state[10],
+                    "position":[state[5],state[6]]
                     
+
+
                 } 
             }
          })
@@ -62,7 +65,7 @@
         myLayer.clearLayers()
         console.log(myLayer)
         myLayer.addData(newData).addTo(map).bindPopup(function(layer){
-            return `Welcome to ${layer.feature.properties.country}`
+            return `I am origin from ${layer.feature.properties.country},</br> And my position is ${layer.feature.properties.position}`
         })
        
         //  myLayer.addData(newData,myLayerOptions).addTo(map)
