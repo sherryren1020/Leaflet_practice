@@ -61,7 +61,7 @@
             `
         })
         
-        setTimeout(fetchData(myLayer),10000)
+        setTimeout(fetchData(myLayer),30000)
         })
     }
     setTimeout(fetchData,1000)
